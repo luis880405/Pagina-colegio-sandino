@@ -1,0 +1,100 @@
+/* Estilos personalizados para el encabezado */
+header {
+    background-color: #007bff; /* Color de fondo azul */
+    color: white; /* Texto en blanco */
+}
+
+header .social-icons a {
+    font-size: 8 rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+    font-weight: bold;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #000;
+}
+
+.dropdown-menu {
+    background-color: #f8f9fa;
+    color: #000;
+}
+
+/* Estilo para hacer la imagen circular */
+.circular-image {
+    width: 160px;           /* Ajusta el tamaño de la imagen */
+    height: 145px;          /* La altura y la anchura deben ser iguales */
+    border-radius: 50%;     /* Hace que la imagen sea circular */
+    overflow: hidden;       /* Oculta las partes sobrantes si la imagen no es cuadrada */
+    border: 5px solid #3498db; /* (Opcional) Agrega un borde azul alrededor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* (Opcional) Sombra suave */
+}
+
+.contact-info span {
+    display: inline-flex;
+    align-items: center;
+}
+
+.social-icons a {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .contact-info, .social-icons {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.navbar-custom {
+    background-color: #D6F3FF; /* Celeste */
+}
+
+/* Establecer un tamaño específico para el carrusel */
+#carouselExampleAutoplaying {
+    width: 1400px; /* Cambia este valor según tus necesidades */
+    height: 800px; /* Cambia este valor según tus necesidades */
+    overflow: hidden; /* Ocultar cualquier contenido que se desborde */
+}
+
+/* Asegúrate de que las imágenes se ajusten al nuevo tamaño */
+.carousel-item img {
+    width: 80%;
+    height: auto; /* Mantiene la proporción de aspecto */
+}
+
+/* Estilo para la sección de Educación de calidad (seccion-educacion) */
+.seccion-educacion {
+    background-color: #FFD700; /* Cambiamos a un color amarillo dorado */
+    color: #333; /* Texto en color oscuro */
+    padding: 50px 0;
+}
+
+.seccion-educacion h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #D2691E; /* Título en color marrón oscuro */
+}
+
+.seccion-educacion p {
+    font-size: 1.2rem;
+}
+
+/* Estilo para la sección de Misión y Visión */
+section.bg-mision {
+    background-color: #FF007F !important; /* Cambiamos a un color rojo tomate */
+    color: white; /* Texto en blanco */
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black; /* Títulos en blanco */
+}
+
+.card-text {
+    font-size: 1rem;
+    color: black; /* Texto en blanco */
+}
