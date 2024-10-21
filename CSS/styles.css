@@ -5,7 +5,7 @@ header {
 }
 
 header .social-icons a {
-    font-size: 8 rem;
+    font-size: 2rem; /* Tamaño de fuente ajustado */
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -25,11 +25,11 @@ header .social-icons a {
 /* Estilo para hacer la imagen circular */
 .circular-image {
     width: 160px;           /* Ajusta el tamaño de la imagen */
-    height: 145px;          /* La altura y la anchura deben ser iguales */
+    height: 160px;          /* La altura y la anchura ahora son iguales */
     border-radius: 50%;     /* Hace que la imagen sea circular */
     overflow: hidden;       /* Oculta las partes sobrantes si la imagen no es cuadrada */
-    border: 5px solid #3498db; /* (Opcional) Agrega un borde azul alrededor */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* (Opcional) Sombra suave */
+    border: 5px solid #3498db; /* Borde azul alrededor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
 }
 
 .contact-info span {
@@ -54,7 +54,7 @@ header .social-icons a {
 
 /* Establecer un tamaño específico para el carrusel */
 #carouselExampleAutoplaying {
-    width: 1400px; /* Cambia este valor según tus necesidades */
+    width: 1345px; /* Cambia este valor según tus necesidades */
     height: 800px; /* Cambia este valor según tus necesidades */
     overflow: hidden; /* Ocultar cualquier contenido que se desborde */
 }
@@ -63,6 +63,7 @@ header .social-icons a {
 .carousel-item img {
     width: 80%;
     height: auto; /* Mantiene la proporción de aspecto */
+    object-fit: cover; /* Ajuste de la imagen dentro del carrusel */
 }
 
 /* Estilo para la sección de Educación de calidad (seccion-educacion) */
@@ -82,19 +83,125 @@ header .social-icons a {
     font-size: 1.2rem;
 }
 
-/* Estilo para la sección de Misión y Visión */
-section.bg-mision {
-    background-color: #FF007F !important; /* Cambiamos a un color rojo tomate */
-    color: white; /* Texto en blanco */
+.bg-mision {
+    background-color: #e6007e;
+}
+
+.icono {
+    background-color: white;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #d5e1e9;
+}
+
+.icono img {
+    width: 60px;
+    height: 60px;
 }
 
 .card-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: black; /* Títulos en blanco */
+    margin-top: 10px;
+    font-size: 24px;
 }
 
 .card-text {
-    font-size: 1rem;
-    color: black; /* Texto en blanco */
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+.oval-img {
+    border-radius: 100%;   /* Hace la imagen circular */
+    width: 300px;         /* Ajusta el tamaño según necesites */
+    height: 300px;        /* Asegura que sea cuadrada */
+    object-fit: cover;    /* Asegura que la imagen se ajuste bien dentro del círculo */
+}
+
+.custom-title {
+    color: #ff007f !important;
+    padding-bottom: 10px;
+    font-weight: bold;
+    
+}
+
+.img-fluid {
+    transition: transform 0.2s ease-in-out;
+}
+
+.img-fluid:hover {
+    transform: scale(1.05);
+}
+
+.shadow-lg {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.shadow-sm {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para la sección de contacto */
+.contact-section {
+    background-color: #ff007f; /* Color de fondo oscuro para la sección de contacto */
+    padding: 40px 0; /* Relleno para asegurar que el contenido esté bien centrado */
+    margin-bottom: 0; /* Sin margen inferior */
+}
+
+/* Asegurar que el contenedor de contacto tenga un fondo diferente */
+.contact-container {
+    background-color: #ff007f; /* Color de fondo para la sección de contacto */
+}
+
+.btn-contact {
+    background-color: white;
+    color: #ec008c;
+    font-size: 1.2rem;
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+/* Estilos para el footer */
+.custom-footer {
+    background-color: #f7f7f7;
+    padding: 50px;
+    border-top: 3px solid #ddd;
+}
+
+.logo {
+    max-width: 100px;
+}
+
+
+.director-info {
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.horario, .direccion {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.mined-logo {
+    max-height: 140px; /* Ajusta este valor según sea necesario */
+    width: auto; /* Mantiene la proporción */
+    margin-top: -40px; /* Ajusta este valor para mover el logo hacia arriba o abajo */
+}
+
+/* Asegurar que el texto esté centrado y el diseño sea responsivo */
+@media (width: 786px) {
+    .text-end {
+        text-align: right !important;
+    }
+
+    .logo, .mined-logo {
+        max-width: 300px;
+        margin: 0 auto;
+    }
 }

@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/estilos.css">
 	<link rel="stylesheet" href="css/styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    
 </head>
 <body>
     
@@ -24,7 +25,7 @@
                     
                     <!-- Iconos de redes sociales alineados en una sola línea -->
                     <div class="social-icons ms-3 d-flex align-items-center">
-                        <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100072202277379&mibextid=ZbWKwL" class="text-white me-2" target="_blank"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
                         <a href="#" class="text-white"><i class="fab fa-telegram"></i></a>
                     </div>
@@ -45,40 +46,36 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="emblematicosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link " href="#" id="emblematicosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             INICIO
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="emblematicosDropdown">
-                            <li><a class="dropdown-item" href="#">Opción 1</a></li>
-                            <li><a class="dropdown-item" href="#">Opción 2</a></li>
-                        </ul>
+                        
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="minedDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                          Áreas Educativas 
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="minedDropdown">
-                            <li><a class="dropdown-item" href="#">Opción 1</a></li>
-                            <li><a class="dropdown-item" href="#">Opción 2</a></li>
+                            <li><a class="dropdown-item" href="#">Preescolar</a></li>
+                            <li><a class="dropdown-item" href="#">Primaria</a></li>
+                            <li><a class="dropdown-item" href="#">Secundaria</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="areasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            MINED
+                            Emblematicos
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="areasDropdown">
-                            <li><a class="dropdown-item" href="#">Opción 1</a></li>
-                            <li><a class="dropdown-item" href="#">Opción 2</a></li>
+                            <li><a class="dropdown-item" href="#">Fundacion</a></li>
+                            <li><a class="dropdown-item" href="#">Biblioteca</a></li>
+                            <li><a class="dropdown-item" href="#">Galeria</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="galeriaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link " href="#" id="galeriaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Contactenos
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="galeriaDropdown">
-                            <li><a class="dropdown-item" href="#">Opción 1</a></li>
-                            <li><a class="dropdown-item" href="#">Opción 2</a></li>
-                        </ul>
+                        
                     </li>
                 </ul>
             </div>
@@ -120,57 +117,178 @@
     </div>
    
        <!-- Sección de Educación de Calidad -->
-       <section class="text-center py-5">
-        <h1 class="text-danger">Educación de calidad</h1>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <img src="images/7ma.jpg" alt="Estudiantes" class="img-fluid rounded-img mb-4"">
-                    <p>
-                        El colegio Augusto Sandino del municipio de Ciudad Sandino ofrece las áreas educativas de preescolar,
-                        primaria y secundaria, brindando un aprendizaje en cada una de sus etapas formativas con maestros
-                        enfocados en desarrollar el talento y disciplina de los estudiantes.
-                    </p>
-                    <a href="#" class="btn btn-danger">Conoce más...</a>
+<section class="text-center py-5">
+    <h3 class="text-danger">Educación de calidad</h3>
+
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <!-- Columna para la imagen -->
+            <div class="col-md-4">
+                <img src="images/7ma.jpg" alt="Estudiantes" class="img-fluid oval-img mb-4">
+            </div>
+            <!-- Columna para el texto -->
+            <div class="col-md-6 text-start">
+                <p>
+                    El colegio Augusto Sandino del municipio de Ciudad Sandino ofrece las áreas educativas de preescolar,
+                    primaria y secundaria, brindando un aprendizaje en cada una de sus etapas formativas con maestros
+                    enfocados en desarrollar el talento y disciplina de los estudiantes.
+                </p>
+                <div class="collapse" id="hideparra">
+                    <div class="card card-body">
+                        <p>Además, el colegio Augusto Sandino se compromete a fomentar un ambiente inclusivo y respetuoso, 
+                            donde cada estudiante se sienta valorado y motivado para alcanzar su máximo potencial.
+                            A través de actividades extracurriculares, como deportes, arte y clubes de interés,
+                            los estudiantes tienen la oportunidad de explorar sus habilidades y pasiones,
+                            promoviendo así un desarrollo integral que va más allá del aula.
+                            El equipo docente está capacitado para brindar apoyo personalizado, 
+                            asegurando que cada alumno reciba la atención necesaria para superar desafíos
+                             y construir un futuro brillante.</p>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary" id="toggleBtn" type="button" data-bs-toggle="collapse" data-bs-target="#hideparra" aria-expanded="false" aria-controls="hideparra">
+                    Conoce más...
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    const toggleBtn = document.getElementById('toggleBtn');
+    const collapseContent = document.getElementById('hideparra');
+
+    toggleBtn.addEventListener('click', function() {
+        if (collapseContent.classList.contains('show')) {
+            toggleBtn.textContent = 'Conoce más...';
+        } else {
+            toggleBtn.textContent = 'Mostrar menos';
+        }
+    });
+</script>
+
+
+<section class="bg-mision text-white py-5">
+    <div class="container">
+        <h3 class="text-center mb-4">Misión y Visión de la Institución</h3>
+        <div class="row text-center">
+            <!-- Misión -->
+            <div class="col-md-6 mb-4">
+                <div class="card bg-light text-dark h-100 p-4">
+                    <div class="card-body">
+                        <div class="icono">
+                            <img src="images/icons8-target-64.png" alt="Icono Misión">
+                        </div>
+                        <h4 class="card-title">Misión</h4>
+                        <p class="card-text">
+                            La misión del Ministerio de Educación de Nicaragua (MINED) es garantizar el acceso, 
+                            la permanencia y la calidad de la educación en todos los niveles, promoviendo la formación 
+                            integral de los estudiantes y el desarrollo de una educación inclusiva y equitativa.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Visión -->
+            <div class="col-md-6 mb-4">
+                <div class="card bg-light text-dark h-100 p-4">
+                    <div class="card-body">
+                        <div class="icono">
+                            <img src="images/vis.png" alt="Icono Visión">
+                        </div>
+                        <h4 class="card-title">Visión</h4>
+                        <p class="card-text">
+                            Hemos avanzado significativamente en el proceso de restitución del Derecho a la Educación de todos
+                            y todas los nicaragüenses, en función de la justicia, dignidad, desarrollo humano y el progreso del
+                            país, con el objetivo de seguir mejorando la calidad de la educación para el bienestar de los estudiantes.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="bg-mision text-white py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Misión y Visión de la Institución</h2>
-            <div class="row text-center">
-                <!-- Misión -->
-                <div class="col-md-6 mb-4">
-                    <div class="card bg-light text-dark h-100 p-4">
-                        <div class="card-body">
-                            <h4 class="card-title">Misión</h4>
-                            <p class="card-text">
-                                La misión del Ministerio de Educación de Nicaragua (MINED) es garantizar el acceso,
-                                la permanencia y la calidad de la educación en todos los niveles, promoviendo la formación
-                                integral de los estudiantes y el desarrollo de una educación inclusiva y equitativa.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+
     
-                <!-- Visión -->
-                <div class="col-md-6 mb-4">
-                    <div class="card bg-light text-dark h-100 p-4">
-                        <div class="card-body">
-                            <h4 class="card-title">Visión</h4>
-                            <p class="card-text">
-                                Hemos avanzado significativamente en el proceso de restitución del Derecho a la Educación de todos
-                                y todas los nicaragüenses, en función de la justicia, dignidad, desarrollo humano y el progreso del
-                                país, con el objetivo de seguir mejorando la calidad de la educación para el bienestar de los estudiantes.
-                            </p>
-                        </div>
-                    </div>
+    <!-- Sección de galería -->
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="text-primary custom-title">Ver más fotos de la galería</h2>
+        <a href="#galeria2" class="btn btn-primary">Ver galería completa</a>
+    </div>
+
+    <!-- Fila principal de la galería -->
+    <div class="row">
+        <!-- Imagen principal grande -->
+        <div class="col-md-8 mb-4">
+            <img src="images/preg3.jpg" class="img-fluid rounded shadow-lg" alt="Danza tradicional">
+        </div>
+        <!-- Imágenes pequeñas a la derecha -->
+        <div class="col-md-4">
+            <div class="row mb-4">
+                <div class="col-12">
+                    <img src="images/preg1.jpg" class="img-fluid rounded shadow-sm" alt="Celebración 203 aniversario">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <img src="images/preg2.jpg" class="img-fluid rounded shadow-sm" alt="Fiestas patrias Nicaragua">
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</div>
+<section class="contact-section text-white text-center">
+    <div class="container contact-container">
+        <div class="col-12 mb-4">
+            <h2>CONTÁCTENOS</h2>
+        </div>
+   <!-- Botón de Contacto -->
+   <div class="col-12">
+    <a href="#" class="btn btn-contact">Ir ahora</a>
+</div>
 
+</div>
+
+</section>
+
+<!-- Footer -->
+<footer class="container-fluid custom-footer">
+    <div class="row align-items-start py-5">
+        <!-- Logo de la izquierda e información de contacto -->
+        <div class="col-md-5 d-flex align-items-center">
+            <!-- Logo a la izquierda -->
+            <div class="text-start me-3">
+                <img src="images/v81_108.png" alt="Logo" class="img-fluid logo">
+            </div>
+            <!-- Información de contacto a la izquierda -->
+            <div class="text-start">
+                <p class="director-info">
+                    <strong>Directora:</strong> LIC. MARÍA FRANCISCA JIMÉNEZ RIVERA<br>
+                    <strong>Subdirectora:</strong> LIC. MARÍA DEL ROSARIO OSEDA DELGADILLO
+                </p>
+            </div>
+        </div>
+        <!-- Horario en el centro -->
+        <div class="col-md-3 text-center">
+            <p class="horario">
+                <strong>Horario de Atención:</strong> Lunes a Viernes <br> 06:00AM - 05:00PM
+            </p>
+        </div>
+        <!-- Dirección y logo de la derecha -->
+        <div class="col-md-4 d-flex align-items-start justify-content-end"> <!-- Justificación a la derecha -->
+            <div class="direccion me-8">
+                <strong>Dirección:</strong><br>Costado Sureste Plaza Cuba,<br> Cd. Sandino
+            </div>
+            <div class="text-end">
+                <img src="images/m2.png" alt="Logo MINED" class="img-fluid mined-logo" >
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+     
 </body>
 </html>
