@@ -3,174 +3,251 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>colegio Agusto C SANDINO</title>
-	<link rel="stylesheet" href="CSS/bootstrap.min.css">
+	<title>Colegio Agusto C. Sandino</title>
+	
+	<!-- Bootstrap CSS desde CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+	<!-- Bootstrap Icons desde CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- Font Awesome para otros íconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+    <!-- Tu propio CSS -->
 	<link rel="stylesheet" href="css/estilos.css">
 	<link rel="stylesheet" href="css/styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     
-	<header class="bg-primary text-white py-2">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-12 text-center text-md-end d-flex justify-content-center justify-content-md-between align-items-center">
-                    <!-- Información de contacto en una sola línea -->
-                    <div class="contact-info d-flex align-items-center">
-                        <span class="me-3"><i class="fas fa-phone-alt"> </i> (505) 2269-6230</span> |
-                        <span class="mx-3"><i class="fas fa-map-marker-alt"> </i> Costado Suroeste Plaza Cabra, Cd. Sandino</span> |
-                        <span class="ms-3"><i class="fas fa-envelope"> </i> augustoc.sandino2021@gmail.com</span>
+    <!-- Top Bar -->
+      <div class="container-fluid bg-primary">
+        <div class="text-white py-2">
+            <div class="container-fluid px-4">
+                <div class="row">
+                    <!-- Información de contacto -->
+                    <div class="col-md-6 d-flex align-items-center">
+                        <span class="me-3"><i class="bi bi-telephone"></i> +505 22696230</span>
+                        <span class="separator"></span>
+                        <span class="me-3"><i class="bi bi-geo-alt"></i> Costado Suroeste plaza cabra, cd. sandino.</span>
+                        <span class="separator"></span>
+                        <span><i class="bi bi-envelope"></i> agustoc.sandino2021@gmail.com</span>
                     </div>
+                    <!-- Redes sociales -->
+                    <div class="col-md-6 text-md-end d-flex align-items-center justify-content-md-end">
+                        <a href="#" class="text-white me-3"><i class="bi bi-facebook fs-3"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-twitter fs-3"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-telegram fs-3"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+    
+
+    
+<!-- Menú de navegación con logo y menú alineados -->
+      <div class="container-fluid bg-celeste">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid px-4 ">
+              
+              <!-- Logo -->
+              <div class="col-3 d-flex align-items-center">
+                <a class="navbar-brand" href="#">
+                  <img src="/images/logo .png" alt="Logo del Colegio" width="100" height="100" class="d-inline-block align-text-top">
+                </a>
+              </div>
+              
+              <!-- Menú de navegación -->
+              <div class="col-9">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-start" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link active fw-bold fs-5" aria-current="page" href="#">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link fw-bold fs-5" href="#">ÁREAS EDUCATIVAS</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle fw-bold fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        EMBLEMÁTICOS
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item fw-semibold" href="#">Fundación</a></li>
+                        <li><a class="dropdown-item fw-semibold" href="#">Biblioteca</a></li>
+                        <li><a class="dropdown-item fw-semibold" href="#">Galería</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link fw-bold fs-5" href="#">CONTACTANOS</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+          
+            </div>
+          </nav>
+      </div>
+  
+      <!-- Hero -->
+      <main class="p-0 container-fluid">
+        <div class=" rounded text-body-emphasis bg-body-secondary">
+            <div class="heroP">
+                <h1 class="fw-bold text-center text-shadow-white">INICIO</h1>
+            </div>
+        </div>
+
+        <!-- Educación de calidad -->
+        <div class="pt-5"></div>
+        <div class="d-flex align-items-center my-4 custom-80">
+            <hr class="line-pink">
+            <h2 class="text-pink fs-1">Educación de calidad</h2>
+        </div>
+        <div class="container">
+            <div class="row py-5">
+                <div class="row px-4 d-flex ">
+                    <div class="col-6 d-flex justify-content-center align-items-center">
+                        <img src="/images/educacion calidad.png" alt="Educación de calidad" >
+                    </div>
+    
+                    <div class="col-6 d-flex justify-content-center align-items-center">
+                        <div class="text-justify">
+                            <p class="fs-5">El colegio agusto sandino del municipio de ciudad sandino ofrece las areas educativas de preescolar, primaria y secundaria, brindando un aprendizaje en cada una de sus etapas formativas con maestros enfocados en desarrollar el talento y disiplina de los estudiantes</p>
+                            <p class="fs-4 text-pink fw-bolder">Conoce más....</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pb-5"></div>
+
+
+        <div class="container-fluid bg-gradient-contact">
+            <div class="row d-flex justify-content-center align-items-center py-5">
+                <p class="fs-1 text-center text-light fw-bolder mb-5">Misión y visión de la institución</p>
+                <div class="col-8">
+                    <div class="row py-5">
+                        <div class="col-6">
+                            <div class="cardp mx-auto">
+                                <!-- Avatar circular superpuesto con ícono -->
+                                <div class="avatar-circle">
+                                    <img src="/images/People.png" alt="Avatar" class="avatar-img">
+                                </div>
+                                <!-- Contenido de la tarjeta -->
+                                <div class="card-body text-center px-5">
+                                    <p class="fs-6 text-justify fw-semibold">La misión del Ministerio de Educación de Nicaragua (MINED) es garantizar el acceso, la permanencia y la calidad de la educación en todos los niveles, promoviendo la formación integral de los estudiantes y el desarrollo de una educación inclusiva y equitativa.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="cardp mx-auto">
+                                <!-- Avatar circular superpuesto con ícono -->
+                                <div class="avatar-circle">
+                                    <img src="/images/vision 1.svg" alt="Avatar" class="avatar-img">
+                                </div>
+                                <!-- Contenido de la tarjeta -->
+                                <div class="card-body text-center px-5">
+                                    <p class="fs-6 text-justify fw-semibold">Hemos avanzado significativamente en el proceso de restitución del Derecho a la Educación de todas y todos los nicaragüenses, con justicia, equidad, calidad y eficacia; los resultados de la transformación educativa serán tangibles a partir de la satisfacción ciudadana y el aporte de la Educación a la reducción de la pobreza.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pt-5"></div>
+        <div class="d-flex align-items-center my-4 custom-80">
+            <hr class="line-pink">
+            <h2 class="text-pink fs-1">Galería de fotos</h2>
+        </div> 
+        <div class="container pb-5">
+            
+            <div class="row">
+                <!-- Tarjeta de la izquierda -->
+                <div class="col-8 d-flex justify-content-center align-items-start">
+                    <div class="card card-left">
+                        <img src="/images/c1.png" class="card-img-top" alt="Imagen izquierda">
+                    </div>
+                </div>
+                <!-- Tarjetas de la derecha -->
+                <div class="col-4 d-flex flex-column justify-content-between">
+                    <div class="row">
+                        <div class="col-12 mb-4">
+                            <div class="card card-right mb-4">
+                                <img src="/images/c2.png" class="card-img-top" alt="Imagen derecha 1">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="card card-right">
+                                <img src="images/c3.png" class="card-img-top" alt="Imagen derecha 2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pb-5"></div>
+
+        <!-- Call to action -->
+         <div class="container-fluid bg-gradient-contact">
+            <div class="row justify-content-center align-items-center py-3">
+                <div class="col-8 m-4 p-4">
+                    <div class="row justify-content-center align-items-center p-4">
+                        <div class="col-6 text-center">
+                            <h1 class="fw-semibolder text-light">CONTÁCTENOS</h1>
+                        </div>
+                        <div class="col-6 text-center">
+                            <button type="button" class="btn btn-light btn-lg btn-rounded">
+                                <div class="px-4">
+                                    <h2 class="text-pink fw-bold mb-0">Ir ahora <i class="bi bi-caret-right-fill"></i></h2>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+      </main>
+
+      <footer class="p-0 bg-footer">
+        <div class="container-fluid py-2">
+            <div class="row bg-footer py-4 justify-content-center">
+                <div class="col-2">
+                    <img src="/images/logo mined.png" alt="Logo del Colegio" width="200" height="100" class="d-inline-block align-text-top">
+                </div>
+    
+                <div class="col-2">
+                    <h5>DIRECTORA</h5>
+                    <P class="fs-7">LIC. MAYRA FRANCISCA BERMÚDEZ RIVERA.</P>
                     
-                    <!-- Iconos de redes sociales alineados en una sola línea -->
-                    <div class="social-icons ms-3 d-flex align-items-center">
-                        <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-white"><i class="fab fa-telegram"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    
-
-    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
-        <div class="container">
-            <div class="col-md-2 text-justify text-md-start">
-                <img src="images/loito.png"alt="Logo Circular" class="circular-image" >
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="emblematicosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            INICIO
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="emblematicosDropdown">
-                            <li><a class="dropdown-item" href="#">Opción 1</a></li>
-                            <li><a class="dropdown-item" href="#">Opción 2</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="minedDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                         Áreas Educativas 
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="minedDropdown">
-                            <li><a class="dropdown-item" href="#">Opción 1</a></li>
-                            <li><a class="dropdown-item" href="#">Opción 2</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="areasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            MINED
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="areasDropdown">
-                            <li><a class="dropdown-item" href="#">Opción 1</a></li>
-                            <li><a class="dropdown-item" href="#">Opción 2</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="galeriaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Contactenos
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="galeriaDropdown">
-                            <li><a class="dropdown-item" href="#">Opción 1</a></li>
-                            <li><a class="dropdown-item" href="#">Opción 2</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="images/1ma.jpg" class="d-block w-100" alt="colegio">
-            </div>
-            <div class="carousel-item">
-                <img src="images/2ma.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="images/3ma.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="images/4ma.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="images/5ma.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="images/6ma.jpg" class="d-block w-100" alt="...">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-   
-       <!-- Sección de Educación de Calidad -->
-       <section class="text-center py-5">
-        <h1 class="text-danger">Educación de calidad</h1>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <img src="images/7ma.jpg" alt="Estudiantes" class="img-fluid rounded-img mb-4"">
-                    <p>
-                        El colegio Augusto Sandino del municipio de Ciudad Sandino ofrece las áreas educativas de preescolar,
-                        primaria y secundaria, brindando un aprendizaje en cada una de sus etapas formativas con maestros
-                        enfocados en desarrollar el talento y disciplina de los estudiantes.
-                    </p>
-                    <a href="#" class="btn btn-danger">Conoce más...</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="bg-mision text-white py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Misión y Visión de la Institución</h2>
-            <div class="row text-center">
-                <!-- Misión -->
-                <div class="col-md-6 mb-4">
-                    <div class="card bg-light text-dark h-100 p-4">
-                        <div class="card-body">
-                            <h4 class="card-title">Misión</h4>
-                            <p class="card-text">
-                                La misión del Ministerio de Educación de Nicaragua (MINED) es garantizar el acceso,
-                                la permanencia y la calidad de la educación en todos los niveles, promoviendo la formación
-                                integral de los estudiantes y el desarrollo de una educación inclusiva y equitativa.
-                            </p>
-                        </div>
-                    </div>
+                    <h5>SUBDIRECTORA</h5>
+                    <p class="fs-7">LIC. VANESA DEL ROSARIO COREA DELGADILLO.</p>
                 </div>
     
-                <!-- Visión -->
-                <div class="col-md-6 mb-4">
-                    <div class="card bg-light text-dark h-100 p-4">
-                        <div class="card-body">
-                            <h4 class="card-title">Visión</h4>
-                            <p class="card-text">
-                                Hemos avanzado significativamente en el proceso de restitución del Derecho a la Educación de todos
-                                y todas los nicaragüenses, en función de la justicia, dignidad, desarrollo humano y el progreso del
-                                país, con el objetivo de seguir mejorando la calidad de la educación para el bienestar de los estudiantes.
-                            </p>
-                        </div>
-                    </div>
+                <div class="col-2">
+                    <h5>HORARIO DE ATENCIÓN</h5>
+                    <P class="fs-7">LUNES A VIERNES</P>
+                    <P class="fs-7">08:00AM - 05:00PM</P>
+                </div>
+    
+                <div class="col-2">
+                    <h5>DIRECCIÓN</h5>
+                    <p class="fs-7">Costado Suroeste Plaza Cabra, Cd. Sandino.</p>
+                </div>
+    
+                <div class="col-2">
+                    <img src="/images/logo fsln.png" alt="Logo del Colegio" width="200" height="100" class="d-inline-block align-text-top">
                 </div>
             </div>
         </div>
-    </section>
+      </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

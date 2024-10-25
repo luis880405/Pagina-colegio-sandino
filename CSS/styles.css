@@ -98,3 +98,167 @@ section.bg-mision {
     font-size: 1rem;
     color: black; /* Texto en blanco */
 }
+
+.heroP {
+    position: relative;
+    background-image: url('../images/hero1.jpg'); /* Reemplaza con tu imagen */
+    background-size: cover;  /* Asegura que la imagen cubra todo el área del div */
+    background-position: center;  /* Centra la imagen */
+    height: 42vh;  /* 40% del alto de la pantalla */
+    display: flex;  /* Flexbox para centrar el contenido */
+    align-items: center;  /* Centrar verticalmente el contenido */
+    justify-content: center;  /* Centrar horizontalmente el contenido */
+    color: white;  /* Color del texto */
+    z-index: 1;
+}
+
+/* Overlay semitransparente */
+.heroP::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Negro con 50% de opacidad */
+    z-index: -1;  /* Sitúa el overlay detrás del contenido */
+}
+
+.heroP h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.text-shadow-white {
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); /* Sombra blanca */
+}
+
+/* Clase para fondo celeste */
+.bg-celeste {
+    background-color: #D6F3FF;
+}
+
+.bg-footer {
+    background-color: #F0F4F6;
+}
+
+.fs-7 {
+    font-size: 0.8rem;
+}
+
+.bg-gradient-contact {
+    background: linear-gradient(to right, #C40E5C 0%, #F81275 66%, #FA2BA5 100%);
+}
+
+.text-pink {
+    color: #F81275;
+}
+
+.line-pink {
+    border: none; /* Eliminar el borde predeterminado */
+    height: 10px; /* Grosor de la línea */
+    background-color: #F81275; /* Color rosa */
+    /* Puedes usar un degradado si lo prefieres */
+    background: linear-gradient(to right, rgba(248, 18, 117, 0.9), rgba(250, 43, 165, 0.9)); /* Degradado rosa */
+    color: #F81275; /* Color del texto (opcional, solo si es necesario) */
+    width: 15%; /* Ancho de la línea, ajusta según tus necesidades */
+    margin-right: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+}
+
+.custom-80 {
+    max-width: 80%; /* Establecer el ancho máximo en 80% */
+    margin: 0 auto; /* Centrar el contenedor */
+}
+
+.cardp {
+    position: relative; /* Permitir que el círculo se posicione respecto a la tarjeta */
+    padding-top: 80px; /* Espacio para evitar que el contenido de la tarjeta se superponga con el círculo */
+    height: 280px; /* Ajuste de altura */
+    width: 500px; /* Ajuste de ancho */
+    background-color: #fff; /* Color de fondo blanco */
+    border-radius: 20px; /* Bordes redondeados de 20px */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    overflow: visible; /* Permitir que el contenido salga del borde */
+    z-index: 0; /* Asegurarse de que el avatar esté encima */
+}
+
+.avatar-circle {
+    width: 120px;
+    height: 120px;
+    background-color: #FFF; /* Color del círculo */
+    border-radius: 50%; /* Hacer el círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute; /* Posición absoluta */
+    top: -50px; /* Mueve el círculo hacia arriba */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translateX(-50%); /* Centrar el círculo */
+    z-index: 1; /* Mantenerlo sobre la tarjeta */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añadir sombra al círculo */
+}
+
+.avatar-circle i {
+    font-size: 2rem; /* Tamaño del ícono */
+    color: #F81275; /* Color del ícono */
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+
+.card-left {
+    width: 761px; /* Ancho de la tarjeta izquierda */
+    height: 720px; /* Alto de la tarjeta izquierda */
+    border-radius: 20px; /* Bordes redondeados */
+    overflow: hidden; /* Para que el contenido no sobresalga */
+    position: relative; /* Para el overlay */
+}
+
+.card-right {
+    width: 390px; /* Ancho de las tarjetas derechas */
+    height: 330px; /* Alto de las tarjetas derechas */
+    border-radius: 20px; /* Bordes redondeados */
+    overflow: hidden; /* Para que el contenido no sobresalga */
+    position: relative; /* Para el overlay */
+}
+
+/* Estilos para el overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Color negro con 50% de opacidad */
+    border-radius: 20px; /* Bordes redondeados */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Color del texto en el overlay */
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 0.3s; /* Transición suave */
+}
+
+/* Mostrar overlay al pasar el mouse sobre la tarjeta */
+.card-left:hover .overlay,
+.card-right:hover .overlay {
+    opacity: 1; /* Hacer visible el overlay */
+}
+
+/* Estilo para las imágenes */
+.card-img-top {
+    object-fit: cover; /* Para que la imagen cubra toda la tarjeta */
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Alto completo */
+}
+
+.separator {
+    display: inline-block; /* Mantiene el separador en línea */
+    width: 2px; /* Ancho de la línea */
+    height: 20px; /* Altura de la línea */
+    background-color: white; /* Color del separador */
+    margin: 0 8px; /* Espaciado horizontal */
+}
